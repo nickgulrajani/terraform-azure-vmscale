@@ -27,5 +27,5 @@ variable "admin_user" {
 }
 
 variable "admin_password" {
-   description  = "Needs a Password"
+   default  = "Password1234!"
 }
