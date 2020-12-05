@@ -114,7 +114,7 @@ resource "azurerm_virtual_machine_scale_set" "vmss" {
  }
 
  os_profile_linux_config {
-   disable_password_authentication = true
+   disable_password_authentication = false
  }
 
  network_profile {
@@ -184,7 +184,7 @@ resource "azurerm_virtual_machine" "jumpbox" {
  }
 
  os_profile_linux_config {
-   disable_password_authentication = true
+   disable_password_authentication = false
  }
 
  tags = var.tags
